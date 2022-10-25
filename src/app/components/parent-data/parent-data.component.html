@@ -1,0 +1,12 @@
+<p>parent-data works!</p>
+
+<h1>Passando dados por componentes Interpolação</h1>
+<h3>Nome: {{userName}}</h3>
+
+<h1>Passando dados por componentes Lista ou objeto</h1>
+<h3>Nome: {{userData.email}}</h3>
+<h3>Permissão: {{userData.role}}</h3>
+
+<div *ngIf ="userData.role === 'admin'">
+    <h3>Permissão: {{userData.role}}</h3>
+</div>
