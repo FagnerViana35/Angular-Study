@@ -14,5 +14,7 @@ export class AppComponent {
     role: 'admin'
   }
 
+  name: string = 'Fagner';
+
   title = 'angular-study';
 }

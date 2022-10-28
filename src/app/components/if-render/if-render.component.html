@@ -1,0 +1,15 @@
+<div *ngIf="canshow != false" class="border border-primary p-2 mb-1 "> 
+    Renderizando condicional 
+    <h2 *ngIf="name === 'Fagner'; else nameNotFound">
+        Ola {{name}} seja bem vindo ao sistema!!!
+    </h2>
+    <ng-template #nameNotFound>
+        <div>
+            <h2>
+                Você ainda não está logado ao sistema!!!
+            </h2>
+        </div>
+        
+    </ng-template>
+    
+</div>

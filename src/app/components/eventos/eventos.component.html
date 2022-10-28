@@ -1,0 +1,25 @@
+<div>
+    <button (click)="testantoClicksD()">decremente</button>
+    <button (click)="testantoClicksI()">Incremente</button>
+    <button (click)="testantoClicksClear()">Clear</button>
+    <div>
+        <p>{{contador}}</p>
+    </div><br><br>
+
+    <button (click)="testanto()"> 
+        <span *ngIf="show == true; else templateName">Fechar</span> 
+        <ng-template #templateName>
+            Abrir
+        </ng-template>
+        
+        
+    </button>
+
+    <div *ngIf="show == true">
+        <h3>
+            Aberto    
+        </h3>
+    </div>
+
+
+</div>
