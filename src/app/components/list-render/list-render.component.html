@@ -1,1 +1,25 @@
-<p>list-render works!</p>
+<div>
+    <ul>
+        <li *ngFor="let dado of tableData">
+            Nome: {{dado.name}} - Especie: {{dado.position}}
+            <button (click)="handleClick(dado)">Abrir</button><button (click)="handleClickLimpar(dado)">Limpar</button>
+        </li>
+    </ul>
+    <h2>{{show}}</h2>
+    
+    <table *ngFor="let dado of tableData">
+        <tr>
+            <th>Nome</th>
+            <th>Weight</th>
+            <th>Symbol</th>
+        </tr>
+        <tr>
+            <td>{{dado.name}}</td>
+            <td>{{dado.weight}}</td>
+            <td>{{dado.symbol}}</td>
+            <td><button (click)="handleClickLimpar(dado)">Limpar</button></td>
+        </tr>
+
+    </table>
+</div>
+
